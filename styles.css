@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: lightgrey;
+}
+
+#title {
+    font-size: 50px;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.secondary-title {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#title2 {
+    color: rebeccapurple;
+}
+
+#table-title {
+    text-align: center;
+}
+
+table {
+    border: 2px solid purple;
+    border-collapse: collapse;
+    width: 60%;
+    position: relative;
+    left:20%;
+}
+
+th {
+    border: 2px solid purple;
+    font-size: 20px;
+    text-align: center;
+    background-color: fuchsia;
+    padding: 10px;
+}
+
+td {
+    border: 2px solid purple;
+    font-size: 18px;
+    padding: 5px;
+    line-height: 1.2;
+}
+
+.Syntax {
+    background-color: lightcyan;
+}

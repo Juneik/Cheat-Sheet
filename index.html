@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS selectors and specificity</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Title and paragraph-->
+        <h1 id='title'>CSS selectors and specificity</h1>
+        <h2 class='secondary-title' id="title2">What is specificity?</h2>
+        <p>Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element. The specificity algorithm calculates the weight of a CSS selector to determine which rule from competing CSS declarations gets applied to an element.</p>
+        <!--Table-->
+        <h2 class='secondary-title' id='table-title'>Possible selectors in order of specifity</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector name</th>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                </tr>    
+            </thead>      
+            <tbody>
+                <tr>
+                    <td>Universal selector</td>
+                    <td><span class="Syntax">*</span></td>
+                    <td>It matches all elements in the HTML file. Since this selector matches all elements, it is the least specific one and will be overshadowed by other selectors.</td>
+                </tr>
+                <tr>
+                    <td>TYPE selector</td>
+                    <td><span class="Syntax">HTML node name</span></td>
+                    <td>It matches elements by node name. In other words, it selects all elements of the given type within a document such as p, h1, and td. This selector is less specific than the CLASS selector and ID selector and will be overshadowed by them.</td>
+                </tr>
+                <tr>
+                    <td>CLASS selector</td>
+                    <td><span class="Syntax">.selector</span></td>
+                    <td>It matches elements based on the contents of their class attribute. This selector is usually used to match multiple elements that have the same characteristics. It is less specific than the ID selector, but more specific than the TYPE selector.</td>
+                </tr>
+                <tr>
+                    <td>ID selector</td>
+                    <td><span class="Syntax">#selector</span></td>
+                    <td>It matches an element based on the value of the element's id attribute. This selector is used to match one and only one HTML element, because of that is the more specific of them all and will overshadow any other selector.</td>
+                </tr>
+            </tbody> 
+        </table>
+    </body>
+</html>
